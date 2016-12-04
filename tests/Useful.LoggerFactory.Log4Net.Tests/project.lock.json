@@ -489,6 +489,9 @@
           "lib/net45/xunit.execution.desktop.dll": {}
         }
       },
+      "xunit.runner.console/2.2.0-beta4-build3444": {
+        "type": "package"
+      },
       "xunit.runner.reporters/2.2.0-beta2-build3300": {
         "type": "package",
         "dependencies": {
@@ -1021,6 +1024,9 @@
           "lib/net45/xunit.execution.desktop.dll": {}
         }
       },
+      "xunit.runner.console/2.2.0-beta4-build3444": {
+        "type": "package"
+      },
       "xunit.runner.reporters/2.2.0-beta2-build3300": {
         "type": "package",
         "dependencies": {
@@ -1552,6 +1558,9 @@
         "runtime": {
           "lib/net45/xunit.execution.desktop.dll": {}
         }
+      },
+      "xunit.runner.console/2.2.0-beta4-build3444": {
+        "type": "package"
       },
       "xunit.runner.reporters/2.2.0-beta2-build3300": {
         "type": "package",
@@ -2811,6 +2820,25 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
+    "xunit.runner.console/2.2.0-beta4-build3444": {
+      "sha512": "8wvUnHHy7Ya+0pRT6zVc/ZyOsJ6MjGDLTXfye+mQToMLVYmcJp5lwvlyeldeu19megpslIcP00VH/8k5omCNfQ==",
+      "type": "package",
+      "path": "xunit.runner.console/2.2.0-beta4-build3444",
+      "files": [
+        "tools/HTML.xslt",
+        "tools/NUnitXml.xslt",
+        "tools/xUnit1.xslt",
+        "tools/xunit.abstractions.dll",
+        "tools/xunit.console.exe",
+        "tools/xunit.console.exe.config",
+        "tools/xunit.console.x86.exe",
+        "tools/xunit.console.x86.exe.config",
+        "tools/xunit.runner.reporters.desktop.dll",
+        "tools/xunit.runner.utility.desktop.dll",
+        "xunit.runner.console.2.2.0-beta4-build3444.nupkg.sha512",
+        "xunit.runner.console.nuspec"
+      ]
+    },
     "xunit.runner.reporters/2.2.0-beta2-build3300": {
       "sha512": "1NqeT2IWfqk9/zBkHbf6SS1bokwu0Mvt70lQp8bJZpvQgi+SDAzuhEwWTcsjMblY2FK8BHDbjauu+IO2GhbhAA==",
       "type": "package",
@@ -2882,6 +2910,7 @@
       "Useful.LoggerFactory.Log4net >= 1.0.0-*",
       "dotnet-test-xunit >= 2.2.0-preview2-build1029",
       "xunit >= 2.2.0-beta4-build3444",
+      "xunit.runner.console >= 2.2.0-beta4-build3444",
       "xunit.runner.visualstudio >= 2.2.0-beta4-build1194"
     ],
     ".NETFramework,Version=v4.5.1": [
