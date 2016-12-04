@@ -20,6 +20,9 @@ build:
 test_script:
 - cmd: >-
     cd tests
+
     dotnet restore
+
     dotnet build
+    
     dotnet test
