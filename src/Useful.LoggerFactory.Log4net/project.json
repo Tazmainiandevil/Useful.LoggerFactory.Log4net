@@ -3,22 +3,25 @@
 
   "dependencies": {    
     "log4net": "2.0.5",
-    "Microsoft.Extensions.Logging.Abstractions": "1.0.0"
+    "Microsoft.Extensions.Logging.Abstractions": "1.0.0"    
   },
   "frameworks": {
     "net451": {
       "frameworkAssemblies": {
-        "System.Runtime": "4.0.10"
+        "System.Runtime": "4.0.10",
+        "System.Xml": "4.0.0"
       }
     },
     "net452": {
       "frameworkAssemblies": {
-        "System.Runtime": "4.0.10"
+        "System.Runtime": "4.0.10",
+        "System.Xml": "4.0.0"
       }
     },
     "net46": {
       "frameworkAssemblies": {
-        "System.Runtime": "4.0.20"
+        "System.Runtime": "4.0.20",
+        "System.Xml": "4.0.0"
       }
     }
   }

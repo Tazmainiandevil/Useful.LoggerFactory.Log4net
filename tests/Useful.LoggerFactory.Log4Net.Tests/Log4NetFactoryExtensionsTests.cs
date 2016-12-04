@@ -17,7 +17,7 @@ namespace Useful.LoggerFactory.Log4Net.Tests
         {
             // Arrange
             // Act
-            Action act = () => Log4NetFactoryExtensions.AddLog4Net(null);
+            Action act = () => Log4NetFactoryExtensions.AddLog4Net(null, "somefile");
 
             // Assert
             act.ShouldThrow<ArgumentNullException>().WithMessage("Value cannot be null.\r\nParameter name: factory");
@@ -32,10 +32,25 @@ namespace Useful.LoggerFactory.Log4Net.Tests
             factory.When(x => x.AddProvider(Arg.Any<ILoggerProvider>())).Do(y => provider = y.Arg<ILoggerProvider>());
 
             // Act
-            Log4NetFactoryExtensions.AddLog4Net(factory);
+            Log4NetFactoryExtensions.AddLog4Net(factory, "somefile");
 
             // Assert
             provider.Should().BeOfType<Log4NetProvider>();
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData("    ")]
+        [InlineData(null)]
+        public void add_log4net_with_factory_and_null_or_empty_configuration_file_throws_exception(string configuration)
+        {
+            // Arrange
+            var factory = Substitute.For<ILoggerFactory>();
+            // Act
+            Action act = () => Log4NetFactoryExtensions.AddLog4Net(factory, configuration);
+
+            // Assert
+            act.ShouldThrow<ArgumentNullException>().WithMessage("Value cannot be null.\r\nParameter name: log4netConfiguration");
         }
     }
 }

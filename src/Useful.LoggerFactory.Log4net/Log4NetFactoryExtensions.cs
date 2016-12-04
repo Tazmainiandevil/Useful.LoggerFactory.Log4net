@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
+using System.IO;
+using log4net.Config;
 
 namespace Useful.LoggerFactory.Log4net
 {
@@ -12,13 +14,22 @@ namespace Useful.LoggerFactory.Log4net
         /// Add the log4net provider to the ILoggerFactory
         /// </summary>
         /// <param name="factory">The factory to add to</param>
+        /// <param name="log4NetConfiguration">The log4net configuration file to use</param>
         /// <returns>The factory as a fluent interface</returns>
-        public static ILoggerFactory AddLog4Net(this ILoggerFactory factory)
+        public static ILoggerFactory AddLog4Net(this ILoggerFactory factory, string log4NetConfiguration)
         {
             if (factory == null)
             {
                 throw new ArgumentNullException(nameof(factory));
             }
+
+            if (string.IsNullOrWhiteSpace(log4NetConfiguration))
+            {
+                throw new ArgumentNullException(nameof(log4NetConfiguration));
+            }
+
+            var filePath = new FileInfo(log4NetConfiguration);
+            XmlConfigurator.Configure(filePath);            
 
             factory.AddProvider(new Log4NetProvider());
 
