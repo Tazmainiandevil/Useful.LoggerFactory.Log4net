@@ -10,6 +10,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <tags>tazmainiandevil Useful.LoggerFactory.Log4net useful LoggerFactory ILogger ILoggerFactory Log4net</tags>
+    <dependencies>
+      <dependency id="log4net" version="2.0.5" />
+      <dependency id="Microsoft.Extensions.Logging.Abstractions" version="1.0.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="src\Useful.LoggerFactory.Log4net\bin\Release\net451\Useful.LoggerFactory.Log4net.dll" target="lib\net451\Useful.LoggerFactory.Log4net.dll" />
