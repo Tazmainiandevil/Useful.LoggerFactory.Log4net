@@ -16,3 +16,10 @@ before_build:
   
 build:
  verbosity: minimal
+
+test_script:
+- cmd: >-
+    cd tests
+    dotnet restore
+    dotnet build
+    dotnet test
