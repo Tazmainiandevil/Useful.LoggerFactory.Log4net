@@ -19,10 +19,6 @@ build:
 
 test_script:
 - cmd: >-
-    cd tests
+    cd tests\Useful.LoggerFactory.Log4Net.Tests
 
-    dotnet restore
-
-    dotnet build
-    
     dotnet test
