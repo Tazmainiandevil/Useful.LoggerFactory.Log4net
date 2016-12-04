@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+  "dependencies": {
+    "FluentAssertions": "4.17.0",
+    "NSubstitute": "1.10.0",
+    "Useful.LoggerFactory.Log4net": "1.0.0-*",
+    "xunit": "2.2.0-beta4-build3444",
+    "xunit.runner.visualstudio": "2.2.0-beta4-build1194",
+    "dotnet-test-xunit": "2.2.0-preview2-build1029"
+  },
+  "frameworks": {
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10"
+      }
+    },
+    "net452": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10"
+      }
+    },
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.20"
+      }
+    }
+  }
+}

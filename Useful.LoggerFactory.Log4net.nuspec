@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$owners$</owners>
+    <licenseUrl>https://github.com/Tazmainiandevil/Useful.LoggerFactory.Log4net/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Tazmainiandevil/Useful.LoggerFactory.Log4net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <tags>tazmainiandevil Useful.LoggerFactory.Log4net useful LoggerFactory ILogger ILoggerFactory Log4net</tags>
+  </metadata>
+  <files>
+    <file src="src\Useful.LoggerFactory.Log4net\bin\Release\net451\Useful.LoggerFactory.Log4net.dll" target="lib\net451\Useful.LoggerFactory.Log4net.dll" />
+	<file src="src\Useful.LoggerFactory.Log4net\bin\Release\net452\Useful.LoggerFactory.Log4net.dll" target="lib\net452\Useful.LoggerFactory.Log4net.dll" />
+	<file src="src\Useful.LoggerFactory.Log4net\bin\Release\net46\Useful.LoggerFactory.Log4net.dll" target="lib\net46\Useful.LoggerFactory.Log4net.dll" />
+  </files>
+</package>
